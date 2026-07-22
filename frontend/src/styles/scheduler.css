@@ -1,0 +1,211 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:white;
+}
+
+/* Main Card */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.4);
+}
+
+/* Headings */
+
+h1{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:25px;
+    color:#38bdf8;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#60a5fa;
+}
+
+h3{
+    margin:20px 0;
+    color:#facc15;
+}
+
+/* Navigation Buttons */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.buttons button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.buttons button:hover{
+    background:#1d4ed8;
+    transform:translateY(-4px);
+}
+
+/* Textarea */
+
+textarea{
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    padding:15px;
+    font-size:16px;
+    resize:none;
+    background:#f8fafc;
+    color:#111827;
+    margin-top:10px;
+}
+
+/* Inputs */
+
+input[type="number"]{
+    padding:10px;
+    width:90px;
+    border:none;
+    border-radius:10px;
+    margin-left:10px;
+}
+
+/* Buttons */
+
+button{
+    background:#10b981;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#059669;
+    transform:scale(1.05);
+}
+
+/* Gantt */
+
+.gantt{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.gantt-box{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    min-width:90px;
+    text-align:center;
+    font-weight:bold;
+    box-shadow:0 5px 12px rgba(0,0,0,.3);
+}
+
+/* Table */
+
+table{
+    width:100%;
+    margin-top:25px;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    background:white;
+    color:black;
+    padding:10px;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+    background:#f1f5f9;
+}
+
+/* Average Cards */
+
+.average{
+    margin-top:20px;
+    background:#1e40af;
+    padding:15px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* Horizontal Line */
+
+hr{
+    margin:50px 0;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.buttons{
+flex-direction:column;
+}
+
+button{
+width:100%;
+}
+
+textarea{
+font-size:14px;
+}
+
+table{
+font-size:14px;
+}
+
+h1{
+font-size:28px;
+}
+
+}
